@@ -34,7 +34,7 @@ export interface Beast {
   name: Translate[];
   picture: string;
   elements: BeastElement[];
-  foods: number;
+  foodId: number;
   zoneId: number;
   typeId: number;
   attributeId: number;

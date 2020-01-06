@@ -163,11 +163,11 @@ export const foods: Food[] = [
     { language: 'en', name: 'Prawn Feast' }
   ]},
   { id: 29, zoneId: 16, name: [
-    { language: 'fr', name: '' },
+    { language: 'fr', name: 'Sashimi du guerrier' },
     { language: 'en', name: 'Blowfish Sashimi' }
   ]},
   { id: 30, zoneId: 16, name: [
-    { language: 'fr', name: '' },
+    { language: 'fr', name: 'Déclinaison de fruits' },
     { language: 'en', name: 'Fruit Platter' }
   ]},
   { id: 31, zoneId: 17, name: [
@@ -226,7 +226,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Mobelin' }, { language: 'en', name: 'Moblin' }],
     picture: 'image_1.png',
     elements: [{ elementId: 1, value: 6 }, { elementId: 2, value: 4 }],
-    foods: 1,
+    foodId: 1,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -236,7 +236,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Mobelin bleu' }, { language: 'en', name: 'Blue Moblin' }],
     picture: 'image_2.png',
     elements: [{ elementId: 4, value: 6 }, { elementId: 3, value: 4 }],
-    foods: 6,
+    foodId: 6,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -246,7 +246,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Marmotte' }, { language: 'en', name: 'Marmot' }],
     picture: 'image_3.png',
     elements: [{ elementId: 3, value: 6 }, { elementId: 2, value: 4 }],
-    foods: 1,
+    foodId: 1,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -256,7 +256,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Marmotte de tonnerre' }, { language: 'en', name: 'Thunder Marmot' }],
     picture: 'image_4.png',
     elements: [{ elementId: 2, value: 6 }, { elementId: 1, value: 4 }],
-    foods: 7,
+    foodId: 7,
     zoneId: 2,
     typeId: null,
     attributeId: null
@@ -266,7 +266,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Marmotte de feu' }, { language: 'en', name: 'Fire Marmot' }],
     picture: 'image_5.png',
     elements: [{ elementId: 1, value: 6 }, { elementId: 2, value: 4 }],
-    foods: 2,
+    foodId: 2,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -276,7 +276,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Marmotte enneigée' }, { language: 'en', name: 'Snowfield Marmot' }],
     picture: 'image_6.png',
     elements: [{ elementId: 4, value: 6 }, { elementId: 3, value: 4 }],
-    foods: 2,
+    foodId: 2,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -286,7 +286,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Smilodon' }, { language: 'en', name: 'Sabre Tiger' }],
     picture: 'image_7.png',
     elements: [{ elementId: 3, value: 6 }, { elementId: 2, value: 4 }],
-    foods: 5,
+    foodId: 5,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -296,7 +296,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Grenouille a ventre rond' }, { language: 'en', name: 'Potbelly Frog' }],
     picture: 'image_8.png',
     elements: [{ elementId: 3, value: 6 }, { elementId: 4, value: 4 }],
-    foods: 12,
+    foodId: 12,
     zoneId: 4,
     typeId: null,
     attributeId: null
@@ -306,7 +306,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_9.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -316,7 +316,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Gorille-licorne' }, { language: 'en', name: 'Unicorn Gorilla' }],
     picture: 'image_10.png',
     elements: [{ elementId: 3, value: 5 }, { elementId: 2, value: 5 }],
-    foods: 3,
+    foodId: 3,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -326,7 +326,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_11.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -336,7 +336,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Lainergie' }, { language: 'en', name: 'Sheep' }],
     picture: 'image_12.png',
     elements: [{ elementId: 3, value: 6 }, { elementId: 2, value: 4 }],
-    foods: 2,
+    foodId: 2,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -346,7 +346,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Curled Horn Sheep' }],
     picture: 'image_13.png',
     elements: [{ elementId: 4, value: 6 }, { elementId: 3, value: 4 }],
-    foods: 27,
+    foodId: 27,
     zoneId: 15,
     typeId: null,
     attributeId: null
@@ -356,7 +356,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_14.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -366,7 +366,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_15.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -376,7 +376,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Ornithorynque' }, { language: 'en', name: 'Platypus' }],
     picture: 'image_16.png',
     elements: [{ elementId: 4, value: 5 }, { elementId: 3, value: 5 }],
-    foods: 3,
+    foodId: 3,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -386,7 +386,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Raptor' }, { language: 'en', name: 'Rapator' }],
     picture: 'image_17.png',
     elements: [{ elementId: 1, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 18,
+    foodId: 18,
     zoneId: 8,
     typeId: null,
     attributeId: null
@@ -396,7 +396,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Dandelion' }],
     picture: 'image_18.png',
     elements: [{ elementId: 3, value: 5 }, { elementId: 2, value: 5 }],
-    foods: 38,
+    foodId: 38,
     zoneId: 21,
     typeId: null,
     attributeId: null
@@ -406,7 +406,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_19.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -416,7 +416,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Ratel' }, { language: 'en', name: 'Honey Badger' }],
     picture: 'image_20.png',
     elements: [{ elementId: 3, value: 5 }, { elementId: 2, value: 5 }],
-    foods: 4,
+    foodId: 4,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -426,7 +426,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_21.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -436,7 +436,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Ptérosaure agile' }, { language: 'en', name: 'Swift Pterosauria' }],
     picture: 'image_22.png',
     elements: [{ elementId: 4, value: 6 }, { elementId: 3, value: 4 }],
-    foods: 1,
+    foodId: 1,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -446,7 +446,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_23.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -456,7 +456,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Pangolin' }],
     picture: 'image_24.png',
     elements: [{ elementId: 3, value: 6 }, { elementId: 2, value: 4 }],
-    foods: 37,
+    foodId: 37,
     zoneId: 21,
     typeId: null,
     attributeId: null
@@ -466,7 +466,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Mobelin noir' }, { language: 'en', name: 'Black Moblin' }],
     picture: 'image_25.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 7,
+    foodId: 7,
     zoneId: 2,
     typeId: null,
     attributeId: null
@@ -476,7 +476,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_26.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -486,7 +486,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Dragon acaudal' }, { language: 'en', name: 'Tailless Dragon' }],
     picture: 'image_27.png',
     elements: [{ elementId: 1, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 7,
+    foodId: 7,
     zoneId: 2,
     typeId: null,
     attributeId: null
@@ -496,7 +496,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_28.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -506,7 +506,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_29.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -516,7 +516,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_30.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -526,7 +526,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Brontosaure' }, { language: 'en', name: 'Thunder Dragon' }],
     picture: 'image_31.png',
     elements: [{ elementId: 2, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 9,
+    foodId: 9,
     zoneId: 3,
     typeId: null,
     attributeId: null
@@ -536,7 +536,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Tricératops de tonnerre' }, { language: 'en', name: 'Thunder Ceratops' }],
     picture: 'image_32.png',
     elements: [{ elementId: 2, value: 7 }, { elementId: 1, value: 3 }],
-    foods: 3,
+    foodId: 3,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -546,7 +546,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_33.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -556,7 +556,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Rock Corythosaurus' }],
     picture: 'image_34.png',
     elements: [{ elementId: 3, value: 6 }, { elementId: 2, value: 4 }],
-    foods: 38,
+    foodId: 38,
     zoneId: 21,
     typeId: null,
     attributeId: null
@@ -566,7 +566,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Chameau' }, { language: 'en', name: 'Camel' }],
     picture: 'image_35.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 10,
+    foodId: 10,
     zoneId: 3,
     typeId: null,
     attributeId: null
@@ -576,7 +576,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_36.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -586,7 +586,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Morse' }, { language: 'en', name: 'Walrus' }],
     picture: 'image_37.png',
     elements: [{ elementId: 4, value: 6 }, { elementId: 3, value: 4 }],
-    foods: 12,
+    foodId: 12,
     zoneId: 4,
     typeId: null,
     attributeId: null
@@ -596,7 +596,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Poisson-globe' }, { language: 'en', name: 'Pufferfish' }],
     picture: 'image_38.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 4, value: 3 }],
-    foods: 12,
+    foodId: 12,
     zoneId: 4,
     typeId: null,
     attributeId: null
@@ -606,7 +606,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Tortue' }, { language: 'en', name: 'Turtle' }],
     picture: 'image_39.png',
     elements: [{ elementId: 4, value: 5 }, { elementId: 3, value: 5 }],
-    foods: 11,
+    foodId: 11,
     zoneId: 4,
     typeId: null,
     attributeId: null
@@ -616,7 +616,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_40.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -626,7 +626,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Rapasdepic poilu' }, { language: 'en', name: 'Hairy Cattle Egret' }],
     picture: 'image_41.png',
     elements: [{ elementId: 4, value: 6 }, { elementId: 3, value: 4 }],
-    foods: 11,
+    foodId: 11,
     zoneId: 4,
     typeId: null,
     attributeId: null
@@ -636,7 +636,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Alcidae' }],
     picture: 'image_42.png',
     elements: [{ elementId: 4, value: 6 }, { elementId: 3, value: 4 }],
-    foods: 29,
+    foodId: 29,
     zoneId: 16,
     typeId: null,
     attributeId: null
@@ -646,7 +646,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Tigre blanc' }, { language: 'en', name: 'Grey Tiger' }],
     picture: 'image_43.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 9,
+    foodId: 9,
     zoneId: 3,
     typeId: null,
     attributeId: null
@@ -656,7 +656,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Grenouille ronde de flammes' }, { language: 'en', name: 'Flame Potbelly Frog' }],
     picture: 'image_44.png',
     elements: [{ elementId: 1, value: 7 }, { elementId: 4, value: 3 }],
-    foods: 11,
+    foodId: 11,
     zoneId: 4,
     typeId: null,
     attributeId: null
@@ -666,7 +666,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_45.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -676,7 +676,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Ankylosaure osseux' }, { language: 'en', name: 'Bone Ankylosaur' }],
     picture: 'image_46.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 13,
+    foodId: 13,
     zoneId: 5,
     typeId: null,
     attributeId: null
@@ -686,7 +686,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Bête de lave en chef' }, { language: 'en', name: 'Lava Beast Chieftain' }],
     picture: 'image_47.png',
     elements: [{ elementId: 1, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 6,
+    foodId: 6,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -696,7 +696,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Écureuil volant' }, { language: 'en', name: 'Flying Squirrel' }],
     picture: 'image_48.png',
     elements: [{ elementId: 3, value: 6 }, { elementId: 2, value: 4 }],
-    foods: 14,
+    foodId: 14,
     zoneId: 5,
     typeId: null,
     attributeId: null
@@ -706,7 +706,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Marmotte céleste' }, { language: 'en', name: 'Sky Marmot' }],
     picture: 'image_49.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 4, value: 3 }],
-    foods: 15,
+    foodId: 15,
     zoneId: 6,
     typeId: null,
     attributeId: null
@@ -716,7 +716,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Marmotte coup-de-foudre' }, { language: 'en', name: 'Thunderbolt Marmot' }],
     picture: 'image_50.png',
     elements: [{ elementId: 2, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 10,
+    foodId: 10,
     zoneId: 3,
     typeId: null,
     attributeId: null
@@ -726,7 +726,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Marmotte volante de feu' }, { language: 'en', name: 'Flying Fire Marmot' }],
     picture: 'image_51.png',
     elements: [{ elementId: 1, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 15,
+    foodId: 15,
     zoneId: 6,
     typeId: null,
     attributeId: null
@@ -736,7 +736,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Flying Frost Marmot' }],
     picture: 'image_52.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 15,
+    foodId: 15,
     zoneId: 6,
     typeId: null,
     attributeId: null
@@ -746,7 +746,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'T.Rex' }, { language: 'en', name: 'T. Rex' }],
     picture: 'image_53.png',
     elements: [{ elementId: 1, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 5,
+    foodId: 5,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -756,7 +756,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Smilodon alpha' }, { language: 'en', name: 'Sabre Tiger King' }],
     picture: 'image_54.png',
     elements: [{ elementId: 3, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 16,
+    foodId: 16,
     zoneId: 6,
     typeId: null,
     attributeId: null
@@ -766,7 +766,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Gorille-licorne en chef' }, { language: 'en', name: 'White Unicorn Gorilla Chief' }],
     picture: 'image_55.png',
     elements: [{ elementId: 4, value: 8 }, { elementId: 1, value: 2 }],
-    foods: 17,
+    foodId: 17,
     zoneId: 7,
     typeId: null,
     attributeId: null
@@ -776,7 +776,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Yak blanc' }, { language: 'en', name: 'White Yak' }],
     picture: 'image_56.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 13,
+    foodId: 13,
     zoneId: 5,
     typeId: null,
     attributeId: null
@@ -786,7 +786,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Ours brun et roux' }, { language: 'en', name: 'Red Brown Bear' }],
     picture: 'image_57.png',
     elements: [{ elementId: 1, value: 7 }, { elementId: 4, value: 3 }],
-    foods: 17,
+    foodId: 17,
     zoneId: 7,
     typeId: null,
     attributeId: null
@@ -796,7 +796,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Stégosaure' }, { language: 'en', name: 'Stegosaurus' }],
     picture: 'image_58.png',
     elements: [{ elementId: 3, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 18,
+    foodId: 18,
     zoneId: 8,
     typeId: null,
     attributeId: null
@@ -806,7 +806,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Raptor blanc' }, { language: 'en', name: 'White Rapator' }],
     picture: 'image_59.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 1, value: 3 }],
-    foods: 5,
+    foodId: 5,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -816,7 +816,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Ptérosaure alpha' }, { language: 'en', name: 'Pterosaur King' }],
     picture: 'image_60.png',
     elements: [{ elementId: 1, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 18,
+    foodId: 18,
     zoneId: 8,
     typeId: null,
     attributeId: null
@@ -826,7 +826,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Tortue géante' }, { language: 'en', name: 'Giant Shell Turtle' }],
     picture: 'image_61.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 19,
+    foodId: 19,
     zoneId: 8,
     typeId: null,
     attributeId: null
@@ -836,7 +836,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Ankylosaure de feu' }, { language: 'en', name: 'Fire Ankylosaur' }],
     picture: 'image_62.png',
     elements: [{ elementId: 1, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 20,
+    foodId: 20,
     zoneId: 9,
     typeId: null,
     attributeId: null
@@ -846,7 +846,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Kingura' }, { language: 'en', name: 'Kinguraa' }],
     picture: 'image_63.png',
     elements: [{ elementId: 4, value: 6 }, { elementId: 3, value: 4 }],
-    foods: 19,
+    foodId: 19,
     zoneId: 8,
     typeId: null,
     attributeId: null
@@ -856,7 +856,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Rock Crab' }],
     picture: 'image_64.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 4, value: 3 }],
-    foods: 19,
+    foodId: 19,
     zoneId: 8,
     typeId: null,
     attributeId: null
@@ -866,7 +866,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Rhinocéros à lame en chef' }, { language: 'en', name: 'Blade Rhino Chieftain' }],
     picture: 'image_65.png',
     elements: [{ elementId: 2, value: 8 }, { elementId: 1, value: 2 }],
-    foods: 20,
+    foodId: 20,
     zoneId: 9,
     typeId: null,
     attributeId: null
@@ -876,7 +876,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Molten Stegosaurus' }],
     picture: 'image_66.png',
     elements: [{ elementId: 1, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 21,
+    foodId: 21,
     zoneId: 10,
     typeId: null,
     attributeId: null
@@ -886,7 +886,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Dragond\'Éole' }, { language: 'en', name: 'Wind Dragon' }],
     picture: 'image_67.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 21,
+    foodId: 21,
     zoneId: 10,
     typeId: null,
     attributeId: null
@@ -896,7 +896,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Vélociraptor polaire' }, { language: 'en', name: 'Arctic Velociraptor' }],
     picture: 'image_68.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 21,
+    foodId: 21,
     zoneId: 10,
     typeId: null,
     attributeId: null
@@ -906,7 +906,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Corythosaure de glace' }, { language: 'en', name: 'Ice Corythosaurus' }],
     picture: 'image_69.png',
     elements: [{ elementId: 4, value: 6 }, { elementId: 3, value: 4 }],
-    foods: 13,
+    foodId: 13,
     zoneId: 5,
     typeId: null,
     attributeId: null
@@ -916,7 +916,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Snowfield Dodo Bird' }],
     picture: 'image_70.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 22,
+    foodId: 22,
     zoneId: 11,
     typeId: null,
     attributeId: null
@@ -926,7 +926,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'White Yak King' }],
     picture: 'image_71.png',
     elements: [{ elementId: 4, value: 8 }, { elementId: 3, value: 2 }],
-    foods: 20,
+    foodId: 20,
     zoneId: 9,
     typeId: null,
     attributeId: null
@@ -936,7 +936,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Polar Bear Chief' }],
     picture: 'image_72.png',
     elements: [{ elementId: 4, value: 8 }, { elementId: 3, value: 2 }],
-    foods: 22,
+    foodId: 22,
     zoneId: 11,
     typeId: null,
     attributeId: null
@@ -946,7 +946,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Blade Rhino' }],
     picture: 'image_73.png',
     elements: [{ elementId: 2, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 22,
+    foodId: 22,
     zoneId: 11,
     typeId: null,
     attributeId: null
@@ -956,7 +956,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Arctic Swellfish' }],
     picture: 'image_74.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 24,
+    foodId: 24,
     zoneId: 12,
     typeId: null,
     attributeId: null
@@ -966,7 +966,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Warg King' }],
     picture: 'image_75.png',
     elements: [{ elementId: 3, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 23,
+    foodId: 23,
     zoneId: 12,
     typeId: null,
     attributeId: null
@@ -976,7 +976,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Icefield Frilled Lizard' }],
     picture: 'image_76.png',
     elements: [{ elementId: 4, value: 6 }, { elementId: 3, value: 4 }],
-    foods: 8,
+    foodId: 8,
     zoneId: 2,
     typeId: null,
     attributeId: null
@@ -986,7 +986,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Icefield Frilled Lizard Chiefta' }],
     picture: 'image_77.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 8,
+    foodId: 8,
     zoneId: 2,
     typeId: null,
     attributeId: null
@@ -996,7 +996,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Red Moblin Chieftain' }],
     picture: 'image_78.png',
     elements: [{ elementId: 1, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 26,
+    foodId: 26,
     zoneId: 14,
     typeId: null,
     attributeId: null
@@ -1006,7 +1006,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'White Wolf King' }],
     picture: 'image_79.png',
     elements: [{ elementId: 4, value: 8 }, { elementId: 1, value: 2 }],
-    foods: 26,
+    foodId: 26,
     zoneId: 14,
     typeId: null,
     attributeId: null
@@ -1016,7 +1016,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Snow Fox' }],
     picture: 'image_80.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 26,
+    foodId: 26,
     zoneId: 14,
     typeId: null,
     attributeId: null
@@ -1026,7 +1026,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Brown Bear' }],
     picture: 'image_81.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 25,
+    foodId: 25,
     zoneId: 13,
     typeId: null,
     attributeId: null
@@ -1036,7 +1036,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Dodo Bird' }],
     picture: 'image_82.png',
     elements: [{ elementId: 1, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 28,
+    foodId: 28,
     zoneId: 15,
     typeId: null,
     attributeId: null
@@ -1046,7 +1046,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Queen Dragon' }],
     picture: 'image_83.png',
     elements: [{ elementId: 4, value: 10 }, { elementId: null, value: null }],
-    foods: 28,
+    foodId: 28,
     zoneId: 15,
     typeId: null,
     attributeId: null
@@ -1056,7 +1056,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Polar Bear' }],
     picture: 'image_84.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 28,
+    foodId: 28,
     zoneId: 15,
     typeId: null,
     attributeId: null
@@ -1066,7 +1066,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Timid Spider' }],
     picture: 'image_85.png',
     elements: [{ elementId: 2, value: 7 }, { elementId: 1, value: 3 }],
-    foods: 27,
+    foodId: 27,
     zoneId: 15,
     typeId: null,
     attributeId: null
@@ -1076,7 +1076,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Mammoth' }],
     picture: 'image_86.png',
     elements: [{ elementId: 3, value: 9 }, { elementId: 4, value: 1 }],
-    foods: 30,
+    foodId: 30,
     zoneId: 16,
     typeId: null,
     attributeId: null
@@ -1086,7 +1086,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Dimetrodon' }],
     picture: 'image_87.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 4, value: 3 }],
-    foods: 30,
+    foodId: 30,
     zoneId: 16,
     typeId: null,
     attributeId: null
@@ -1096,7 +1096,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Lightning Dimetrodon' }],
     picture: 'image_88.png',
     elements: [{ elementId: 2, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 30,
+    foodId: 30,
     zoneId: 16,
     typeId: null,
     attributeId: null
@@ -1106,7 +1106,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_89.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1116,7 +1116,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Silver Thunder Dragon' }],
     picture: 'image_90.png',
     elements: [{ elementId: 2, value: 8 }, { elementId: 1, value: 2 }],
-    foods: 29,
+    foodId: 29,
     zoneId: 16,
     typeId: null,
     attributeId: null
@@ -1126,7 +1126,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Dragon de Rochenoire' }, { language: 'en', name: 'Blackrock Tailless Dragon' }],
     picture: 'image_91.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 9,
+    foodId: 9,
     zoneId: 3,
     typeId: null,
     attributeId: null
@@ -1136,7 +1136,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Pallid Light Tailless Dragon' }],
     picture: 'image_92.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 29,
+    foodId: 29,
     zoneId: 16,
     typeId: null,
     attributeId: null
@@ -1146,7 +1146,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Black Bear' }],
     picture: 'image_93.png',
     elements: [{ elementId: 2, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 27,
+    foodId: 27,
     zoneId: 15,
     typeId: null,
     attributeId: null
@@ -1156,7 +1156,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Grey Tiger King' }],
     picture: 'image_94.png',
     elements: [{ elementId: 4, value: 8 }, { elementId: 3, value: 2 }],
-    foods: 25,
+    foodId: 25,
     zoneId: 13,
     typeId: null,
     attributeId: null
@@ -1166,7 +1166,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Ankylosaur' }],
     picture: 'image_95.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 24,
+    foodId: 24,
     zoneId: 12,
     typeId: null,
     attributeId: null
@@ -1176,7 +1176,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Rhino' }],
     picture: 'image_96.png',
     elements: [{ elementId: 4, value: 6 }, { elementId: 3, value: 4 }],
-    foods: 24,
+    foodId: 24,
     zoneId: 12,
     typeId: null,
     attributeId: null
@@ -1186,7 +1186,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Renard de foudre' }, { language: 'en', name: 'Lightning Fox' }],
     picture: 'image_97.png',
     elements: [{ elementId: 2, value: 8 }, { elementId: 1, value: 2 }],
-    foods: 4,
+    foodId: 4,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -1196,7 +1196,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Fire Tuktuk' }],
     picture: 'image_98.png',
     elements: [{ elementId: 1, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 31,
+    foodId: 31,
     zoneId: 17,
     typeId: null,
     attributeId: null
@@ -1206,7 +1206,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Aethia Cristatella' }],
     picture: 'image_99.png',
     elements: [{ elementId: 2, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 32,
+    foodId: 32,
     zoneId: 17,
     typeId: null,
     attributeId: null
@@ -1216,7 +1216,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Dinornis' }],
     picture: 'image_100.png',
     elements: [{ elementId: 1, value: 9 }, { elementId: 4, value: 1 }],
-    foods: 32,
+    foodId: 32,
     zoneId: 17,
     typeId: null,
     attributeId: null
@@ -1226,7 +1226,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Icesea Placodermi' }],
     picture: 'image_101.png',
     elements: [{ elementId: 4, value: 8 }, { elementId: 1, value: 2 }],
-    foods: 32,
+    foodId: 32,
     zoneId: 17,
     typeId: null,
     attributeId: null
@@ -1236,7 +1236,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Moon Wind Dragon' }],
     picture: 'image_102.png',
     elements: [{ elementId: 4, value: 9 }, { elementId: 1, value: 1 }],
-    foods: 31,
+    foodId: 31,
     zoneId: 17,
     typeId: null,
     attributeId: null
@@ -1246,7 +1246,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Sand Fox' }],
     picture: 'image_103.png',
     elements: [{ elementId: 3, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 33,
+    foodId: 33,
     zoneId: 18,
     typeId: null,
     attributeId: null
@@ -1256,7 +1256,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Sand Frilled Lizard Chieftain' }],
     picture: 'image_104.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 33,
+    foodId: 33,
     zoneId: 18,
     typeId: null,
     attributeId: null
@@ -1266,7 +1266,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Sun Frilled Lizard' }],
     picture: 'image_105.png',
     elements: [{ elementId: 1, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 33,
+    foodId: 33,
     zoneId: 18,
     typeId: null,
     attributeId: null
@@ -1276,7 +1276,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Irish Elk' }],
     picture: 'image_106.png',
     elements: [{ elementId: 3, value: 9 }, { elementId: 2, value: 1 }],
-    foods: 34,
+    foodId: 34,
     zoneId: 19,
     typeId: null,
     attributeId: null
@@ -1286,7 +1286,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'White Camel' }],
     picture: 'image_107.png',
     elements: [{ elementId: 4, value: 8 }, { elementId: 3, value: 2 }],
-    foods: 35,
+    foodId: 35,
     zoneId: 19,
     typeId: null,
     attributeId: null
@@ -1296,7 +1296,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Pelican' }],
     picture: 'image_108.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 31,
+    foodId: 31,
     zoneId: 17,
     typeId: null,
     attributeId: null
@@ -1306,7 +1306,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Hermit Crab' }],
     picture: 'image_109.png',
     elements: [{ elementId: 3, value: 8 }, { elementId: 4, value: 2 }],
-    foods: 34,
+    foodId: 34,
     zoneId: 19,
     typeId: null,
     attributeId: null
@@ -1316,7 +1316,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Thunder Stegosaurus' }],
     picture: 'image_110.png',
     elements: [{ elementId: 2, value: 9 }, { elementId: 1, value: 1 }],
-    foods: 35,
+    foodId: 35,
     zoneId: 19,
     typeId: null,
     attributeId: null
@@ -1326,7 +1326,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Yak King' }],
     picture: 'image_111.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 35,
+    foodId: 35,
     zoneId: 19,
     typeId: null,
     attributeId: null
@@ -1336,7 +1336,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Water Jerboa' }],
     picture: 'image_112.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 34,
+    foodId: 34,
     zoneId: 19,
     typeId: null,
     attributeId: null
@@ -1346,7 +1346,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Rock Placodermi' }],
     picture: 'image_113.png',
     elements: [{ elementId: 3, value: 8 }, { elementId: 4, value: 2 }],
-    foods: 36,
+    foodId: 36,
     zoneId: 20,
     typeId: null,
     attributeId: null
@@ -1356,7 +1356,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Roi à crinière noire' }, { language: 'en', name: 'Moblin Chieftain' }],
     picture: 'image_114.png',
     elements: [{ elementId: 2, value: 2 }, { elementId: 3, value: null }],
-    foods: 6,
+    foodId: 6,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -1366,7 +1366,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Golden Thunder Dragon' }],
     picture: 'image_115.png',
     elements: [{ elementId: 2, value: 9 }, { elementId: 1, value: 1 }],
-    foods: 36,
+    foodId: 36,
     zoneId: 20,
     typeId: null,
     attributeId: null
@@ -1376,7 +1376,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_116.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1386,7 +1386,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Triceratops' }],
     picture: 'image_117.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 36,
+    foodId: 36,
     zoneId: 20,
     typeId: null,
     attributeId: null
@@ -1396,7 +1396,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'T.Rex de Rochenoire' }, { language: 'en', name: 'Black Rock T. Rex' }],
     picture: 'image_118.png',
     elements: [{ elementId: 3, value: 8 }, { elementId: 4, value: 2 }],
-    foods: 8,
+    foodId: 8,
     zoneId: 2,
     typeId: null,
     attributeId: null
@@ -1406,7 +1406,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Mountain Dragon' }],
     picture: 'image_119.png',
     elements: [{ elementId: 3, value: 6 }, { elementId: 2, value: 4 }],
-    foods: 23,
+    foodId: 23,
     zoneId: 12,
     typeId: null,
     attributeId: null
@@ -1416,7 +1416,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Giant Mountain Dragon' }],
     picture: 'image_120.png',
     elements: [{ elementId: 3, value: 9 }, { elementId: 2, value: 1 }],
-    foods: 23,
+    foodId: 23,
     zoneId: 12,
     typeId: null,
     attributeId: null
@@ -1426,7 +1426,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Radobaan' }],
     picture: 'image_121.png',
     elements: [{ elementId: 3, value: 8 }, { elementId: 4, value: 2 }],
-    foods: 39,
+    foodId: 39,
     zoneId: 22,
     typeId: null,
     attributeId: null
@@ -1436,7 +1436,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Typhoon Dragon' }],
     picture: 'image_122.png',
     elements: [{ elementId: 4, value: 8 }, { elementId: 3, value: 2 }],
-    foods: 40,
+    foodId: 40,
     zoneId: 23,
     typeId: null,
     attributeId: null
@@ -1446,7 +1446,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Dragon-tyran' }, { language: 'en', name: 'Tyrant Dragon' }],
     picture: 'image_123.png',
     elements: [{ elementId: 1, value: 10 }, { elementId: null, value: null }],
-    foods: 16,
+    foodId: 16,
     zoneId: 6,
     typeId: null,
     attributeId: null
@@ -1456,7 +1456,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Panda roux' }, { language: 'en', name: 'Fire Fox' }],
     picture: 'image_124.png',
     elements: [{ elementId: 1, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 10,
+    foodId: 10,
     zoneId: 3,
     typeId: null,
     attributeId: null
@@ -1466,7 +1466,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Pangolin Chieftain' }],
     picture: 'image_125.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 16,
+    foodId: 16,
     zoneId: 6,
     typeId: null,
     attributeId: null
@@ -1476,7 +1476,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Black Rapator' }],
     picture: 'image_126.png',
     elements: [{ elementId: 3, value: 7 }, { elementId: 2, value: 3 }],
-    foods: 40,
+    foodId: 40,
     zoneId: 23,
     typeId: null,
     attributeId: null
@@ -1486,7 +1486,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Silver Hummingbird' }],
     picture: 'image_127.png',
     elements: [{ elementId: 4, value: 7 }, { elementId: 3, value: 3 }],
-    foods: 38,
+    foodId: 38,
     zoneId: 21,
     typeId: null,
     attributeId: null
@@ -1496,7 +1496,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'White Warg' }],
     picture: 'image_128.png',
     elements: [{ elementId: 4, value: 8 }, { elementId: 1, value: 2 }],
-    foods: 41,
+    foodId: 41,
     zoneId: 24,
     typeId: null,
     attributeId: null
@@ -1506,7 +1506,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Proto-Dragon' }],
     picture: 'image_129.png',
     elements: [{ elementId: 3, value: 10 }, { elementId: null, value: null }],
-    foods: 40,
+    foodId: 40,
     zoneId: 23,
     typeId: null,
     attributeId: null
@@ -1516,7 +1516,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Ice Liondragon' }],
     picture: 'image_130.png',
     elements: [{ elementId: 4, value: 8 }, { elementId: 3, value: 2 }],
-    foods: 42,
+    foodId: 42,
     zoneId: 25,
     typeId: null,
     attributeId: null
@@ -1526,7 +1526,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Toot Bird' }],
     picture: 'image_131.png',
     elements: [{ elementId: 3, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 37,
+    foodId: 37,
     zoneId: 21,
     typeId: null,
     attributeId: null
@@ -1536,7 +1536,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Furious Platypus' }],
     picture: 'image_132.png',
     elements: [{ elementId: 1, value: 8 }, { elementId: 2, value: 2 }],
-    foods: 42,
+    foodId: 42,
     zoneId: 25,
     typeId: null,
     attributeId: null
@@ -1546,7 +1546,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Syngnathus' }],
     picture: 'image_133.png',
     elements: [{ elementId: 4, value: 9 }, { elementId: 3, value: 1 }],
-    foods: 41,
+    foodId: 41,
     zoneId: 24,
     typeId: null,
     attributeId: null
@@ -1556,7 +1556,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Lightning T. Rex' }],
     picture: 'image_134.png',
     elements: [{ elementId: 2, value: 8 }, { elementId: 3, value: 2 }],
-    foods: 25,
+    foodId: 25,
     zoneId: 13,
     typeId: null,
     attributeId: null
@@ -1566,7 +1566,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_135.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1576,7 +1576,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_136.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1586,7 +1586,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_137.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1596,7 +1596,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_138.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1606,7 +1606,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_139.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1616,7 +1616,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_140.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1626,7 +1626,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_141.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1636,7 +1636,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_142.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1646,7 +1646,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_143.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1656,7 +1656,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_144.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1666,7 +1666,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Lightning Flying Squirrel' }],
     picture: 'image_145.png',
     elements: [{ elementId: 2, value: 7 }, { elementId: 1, value: 3 }],
-    foods: 41,
+    foodId: 41,
     zoneId: 24,
     typeId: null,
     attributeId: null
@@ -1676,7 +1676,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_146.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1686,7 +1686,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_147.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1696,7 +1696,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_148.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1706,7 +1706,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: 'Ours brun et roux en chef' }, { language: 'en', name: 'Red Brown Bear Chief' }],
     picture: 'image_149.png',
     elements: [{ elementId: 1, value: 8 }, { elementId: 4, value: 2 }],
-    foods: 4,
+    foodId: 4,
     zoneId: 1,
     typeId: null,
     attributeId: null
@@ -1716,7 +1716,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_150.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1726,7 +1726,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_151.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1736,7 +1736,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_152.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1746,7 +1746,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_153.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1756,7 +1756,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: 'Crimson Wolf King' }],
     picture: 'image_154.png',
     elements: [{ elementId: 1, value: 9 }, { elementId: 2, value: 1 }],
-    foods: 37,
+    foodId: 37,
     zoneId: 21,
     typeId: null,
     attributeId: null
@@ -1766,7 +1766,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_155.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1776,7 +1776,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_156.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1786,7 +1786,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_157.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1796,7 +1796,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_158.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1806,7 +1806,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_159.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1816,7 +1816,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_160.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1826,7 +1826,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_161.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1836,7 +1836,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_162.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1846,7 +1846,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_163.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1856,7 +1856,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_164.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1866,7 +1866,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_165.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1876,7 +1876,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_166.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1886,7 +1886,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_167.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1896,7 +1896,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_168.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1906,7 +1906,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_169.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1916,7 +1916,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_170.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1926,7 +1926,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_171.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1936,7 +1936,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_172.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1946,7 +1946,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_173.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1956,7 +1956,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_174.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1966,7 +1966,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_175.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1976,7 +1976,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_176.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1986,7 +1986,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_177.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -1996,7 +1996,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_178.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -2006,7 +2006,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_179.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -2016,7 +2016,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_180.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -2026,7 +2026,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_181.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -2036,7 +2036,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_182.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -2046,7 +2046,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_183.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -2056,7 +2056,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_184.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
@@ -2066,7 +2066,7 @@ export const beasts: Beast[] = [
     name: [{ language: 'fr', name: '' }, { language: 'en', name: '' }],
     picture: 'image_185.png',
     elements: [{ elementId: null, value: null }, { elementId: null, value: null }],
-    foods: null,
+    foodId: null,
     zoneId: null,
     typeId: null,
     attributeId: null
